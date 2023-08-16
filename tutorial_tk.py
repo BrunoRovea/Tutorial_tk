@@ -71,9 +71,9 @@ class Application(Funcs):
         self.widgets_frame1()
         self.lista_frame2()
         self.montaTabelas()
-
         # Coloca a abertura de janela em loop para que se possa interagir com ela
         root.mainloop()
+    
     # Função para criar as configurações de tela
     def tela(self):
         # Cria um título para a janela
@@ -90,14 +90,11 @@ class Application(Funcs):
         # Máximo e mínimo de responsividade
         self.root.maxsize(width= 900, height=700)
         self.root.minsize(width=500, height=400)
+    
     # Criação de frames da tela (subdivisões)
     def frames_da_tela(self):
-
-
-
-
         # Configurações do frame, bd é o border, bg é a cor do interior do border
-        # # high são as configurações de borda
+        # High são as configurações de borda
         self.frame_1 = Frame(self.root, bd = 4, bg = '#dfe3ee', 
                              highlightbackground="#759fe6", highlightthickness=3)
 
