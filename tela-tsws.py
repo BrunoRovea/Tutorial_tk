@@ -20,19 +20,24 @@ class Funcs():
         self.nomep_entry.delete(0, END)
 
     def conectTSWS(self):
-        print('Conectado ao TSWS no modo desenvolvimento')
+        query = self.step_amount_entry.get()
+        print(query)
 
     def toogle_snapshot(self):
-        print('Inicializando Snapshot')
+        query = self.filtro_entry.get()
+        print(query)
 
     def buscar_evt(self):
-        print('Buscando eventos')
+        query = self.filtro_entry.get()
+        print(query)
 
     def export(self):
-        print('Lista exportada')  
+        query = self.nomep_entry.get()
+        print(query)
 
     def load_list(self):
-        print('Lista carregada')
+        query = self.filtro_entry.get()
+        print(query)
 
 # A classe Application pode utilizar as funções da classe Funcs
 class Application(Funcs):
